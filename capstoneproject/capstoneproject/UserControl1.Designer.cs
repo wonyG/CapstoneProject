@@ -33,7 +33,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(532, 380);
+            this.button1.Location = new System.Drawing.Point(383, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -46,7 +46,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(800, 450);
+            this.Size = new System.Drawing.Size(477, 655);
+            this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
 
         }

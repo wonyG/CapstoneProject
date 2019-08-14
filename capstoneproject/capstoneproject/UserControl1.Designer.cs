@@ -39,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button1
@@ -139,18 +138,10 @@
             this.listBox1.Size = new System.Drawing.Size(530, 316);
             this.listBox1.TabIndex = 10;
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(50, 416);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(707, 194);
-            this.panel1.TabIndex = 11;
-            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -182,6 +173,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Panel panel1;
     }
 }

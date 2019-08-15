@@ -65,5 +65,15 @@ namespace capstoneproject
             //listbox 내부에 있는 모든 곡을 순차적으로 반복재생하는 버튼
             //if listbox.length < count, count = 0 를 사용하면 될듯
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

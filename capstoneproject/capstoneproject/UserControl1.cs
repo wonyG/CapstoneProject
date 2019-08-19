@@ -75,5 +75,57 @@ namespace capstoneproject
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //검색할 태그를 입력할 textbox
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //설정 버튼
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //태그를 이용해 검색된 결과를 띄워놓을 listview
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //선택된 곡의 앨범아트가 표시될 picturebox
+        }
+
+        private void play_Click(object sender, EventArgs e)
+        {
+            //선택된 곡을 재생할 버튼
+            //한번 더 누르면 일시정지로 기능함
+        }
+
+        private void stop_Click(object sender, EventArgs e)
+        {
+            //선택된 곡을 완전히 정지함
+            //다시 재생버튼을 누를 경우 처음부터 다시 재생함
+        }
+
+        private void rew_Click(object sender, EventArgs e)
+        {
+            //선택된 곡의 처음으로 돌아가 재생함
+        }
+
+        private void prev_Click(object sender, EventArgs e)
+        {
+            //검색결과 정렬상에서 선택된 곡의 이전곡을 재생함
+        }
+
+        private void next_Click(object sender, EventArgs e)
+        {
+            //검색결과 정렬상에서 선택된 곡의 다음곡을 재생함
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+            //재생 중인 곡의 진행상황을 프로그레스바의 차오름으로 표시
+        }
     }
 }

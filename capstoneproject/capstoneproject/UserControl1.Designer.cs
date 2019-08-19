@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,18 +48,26 @@
             this.mname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mtime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mtag = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.prev = new System.Windows.Forms.PictureBox();
+            this.rew = new System.Windows.Forms.PictureBox();
+            this.play = new System.Windows.Forms.PictureBox();
+            this.stop = new System.Windows.Forms.PictureBox();
+            this.next = new System.Windows.Forms.PictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.next)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(448, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(392, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 29);
+            this.button1.Size = new System.Drawing.Size(96, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
@@ -65,10 +75,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(448, 46);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(392, 37);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 29);
+            this.button2.Size = new System.Drawing.Size(96, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "태그 추가";
             this.button2.UseVisualStyleBackColor = true;
@@ -76,10 +85,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(448, 83);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(392, 66);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 29);
+            this.button3.Size = new System.Drawing.Size(96, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "목록에서 제거";
             this.button3.UseVisualStyleBackColor = true;
@@ -87,10 +95,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(448, 120);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Location = new System.Drawing.Point(392, 96);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 29);
+            this.button4.Size = new System.Drawing.Size(96, 23);
             this.button4.TabIndex = 3;
             this.button4.Text = "태그 관리";
             this.button4.UseVisualStyleBackColor = true;
@@ -98,10 +105,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(448, 239);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Location = new System.Drawing.Point(392, 191);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 29);
+            this.button5.Size = new System.Drawing.Size(96, 23);
             this.button5.TabIndex = 4;
             this.button5.Text = "이곡 반복재생";
             this.button5.UseVisualStyleBackColor = true;
@@ -109,10 +115,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(448, 275);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button6.Location = new System.Drawing.Point(392, 220);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(110, 29);
+            this.button6.Size = new System.Drawing.Size(96, 23);
             this.button6.TabIndex = 5;
             this.button6.Text = "랜덤재생";
             this.button6.UseVisualStyleBackColor = true;
@@ -120,10 +125,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(448, 311);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button7.Location = new System.Drawing.Point(392, 249);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 29);
+            this.button7.Size = new System.Drawing.Size(96, 23);
             this.button7.TabIndex = 6;
             this.button7.Text = "전체 반복재생";
             this.button7.UseVisualStyleBackColor = true;
@@ -131,69 +135,94 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(448, 410);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button8.Location = new System.Drawing.Point(392, 328);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(110, 29);
+            this.button8.Size = new System.Drawing.Size(96, 23);
             this.button8.TabIndex = 7;
             this.button8.Text = "설정";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 16);
+            this.label1.Location = new System.Drawing.Point(10, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
+            this.label1.Size = new System.Drawing.Size(37, 12);
             this.label1.TabIndex = 8;
             this.label1.Text = "태그 :";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(60, 10);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 25);
+            this.textBox1.Size = new System.Drawing.Size(327, 21);
             this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.next);
+            this.panel1.Controls.Add(this.stop);
+            this.panel1.Controls.Add(this.play);
+            this.panel1.Controls.Add(this.rew);
+            this.panel1.Controls.Add(this.prev);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(13, 447);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(11, 358);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(545, 271);
+            this.panel1.Size = new System.Drawing.Size(477, 217);
             this.panel1.TabIndex = 11;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(189, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 12);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "태그 :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(189, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "곡 이름 :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(226, 82);
+            this.label4.Location = new System.Drawing.Point(189, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 15);
+            this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 3;
             this.label4.Text = "상세 정보 :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(226, 17);
+            this.label2.Location = new System.Drawing.Point(198, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.Size = new System.Drawing.Size(0, 12);
             this.label2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(176, 176);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // listView1
             // 
@@ -201,12 +230,14 @@
             this.mname,
             this.mtime,
             this.mtag});
-            this.listView1.Location = new System.Drawing.Point(14, 46);
+            this.listView1.Location = new System.Drawing.Point(12, 37);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(428, 393);
+            this.listView1.Size = new System.Drawing.Size(375, 315);
             this.listView1.TabIndex = 12;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // mname
             // 
@@ -223,27 +254,62 @@
             this.mtag.Text = "태그";
             this.mtag.Width = 105;
             // 
-            // label3
+            // prev
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(226, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "곡 이름 :";
+            this.prev.Location = new System.Drawing.Point(192, 125);
+            this.prev.Name = "prev";
+            this.prev.Size = new System.Drawing.Size(49, 45);
+            this.prev.TabIndex = 6;
+            this.prev.TabStop = false;
+            this.prev.Click += new System.EventHandler(this.prev_Click);
             // 
-            // label5
+            // rew
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(226, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "태그 :";
+            this.rew.Location = new System.Drawing.Point(247, 125);
+            this.rew.Name = "rew";
+            this.rew.Size = new System.Drawing.Size(49, 45);
+            this.rew.TabIndex = 7;
+            this.rew.TabStop = false;
+            this.rew.Click += new System.EventHandler(this.rew_Click);
+            // 
+            // play
+            // 
+            this.play.Location = new System.Drawing.Point(302, 125);
+            this.play.Name = "play";
+            this.play.Size = new System.Drawing.Size(49, 45);
+            this.play.TabIndex = 8;
+            this.play.TabStop = false;
+            this.play.Click += new System.EventHandler(this.play_Click);
+            // 
+            // stop
+            // 
+            this.stop.Location = new System.Drawing.Point(357, 125);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(49, 45);
+            this.stop.TabIndex = 9;
+            this.stop.TabStop = false;
+            this.stop.Click += new System.EventHandler(this.stop_Click);
+            // 
+            // next
+            // 
+            this.next.Location = new System.Drawing.Point(412, 125);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(49, 45);
+            this.next.TabIndex = 10;
+            this.next.TabStop = false;
+            this.next.Click += new System.EventHandler(this.next_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(0, 178);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(476, 38);
+            this.progressBar1.TabIndex = 11;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // UserControl1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel1);
@@ -257,12 +323,16 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(569, 733);
+            this.Size = new System.Drawing.Size(498, 586);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.next)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +360,11 @@
         private System.Windows.Forms.ColumnHeader mtag;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.PictureBox next;
+        private System.Windows.Forms.PictureBox stop;
+        private System.Windows.Forms.PictureBox play;
+        private System.Windows.Forms.PictureBox rew;
+        private System.Windows.Forms.PictureBox prev;
     }
 }

@@ -35,8 +35,8 @@ namespace capstoneproject
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            AddTag addTag = new AddTag();
+            addTag.Show();
             //UserControl2로 이동하는 버튼
         }
 

@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTag.Designer.cs">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="TagManagement.cs">
       <SubType>Form</SubType>
@@ -59,6 +65,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddTag.resx">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TagManagement.resx">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </EmbeddedResource>
